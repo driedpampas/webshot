@@ -10,12 +10,12 @@ jobs:
     steps:
       - uses: karol-brejna-i/webpage-screenshot-action@v1
         with:
-          url: https://trends.google.com/trends/explore?date=now%201-d&geo=RO&q=dex&hl=en-US
+          url: https://bing.com
           output: dexshot.png
           
       - uses: karol-brejna-i/webpage-screenshot-action@v1
         with:
-          url: https://trends.google.com/trends/trendingsearches/daily?geo=RO&hl=en-US
+          url: https://trends.bing.com
           output: dailytrends.png
 
       - uses: actions/upload-artifact@v4
