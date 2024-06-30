@@ -8,18 +8,18 @@ jobs:
   screenshots:
     runs-on: ubuntu-latest
     steps:
-      - uses: karol-brejna-i/webpage-screenshot-action@v1
+      - uses: karol-brejna-i/webpage-screenshot-action@v1.1.2
         with:
-          url: https://trends.bing.com
+          url: https://trends.google.com/trends/explore?date=now%201-d&geo=RO&q=dex&hl=en-US
           output: dexshot.png
 
       - name: Sleep
         run: sleep 5s
         shell: bash
 
-      - uses: karol-brejna-i/webpage-screenshot-action@v1
+      - uses: karol-brejna-i/webpage-screenshot-action@v1.1.2
         with:
-          url: https://bing.com
+          url: https://trends.google.com/trends/trendingsearches/daily?geo=RO&hl=en-US
           output: dailytrends.png
 
       - uses: actions/upload-artifact@v4
